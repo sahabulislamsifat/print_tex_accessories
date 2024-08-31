@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Tex Accessories</title>
+    <!-- Google Font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and DaisyUI CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary": "#E76F51",
+              "bike-primary-bg": "rgba(231, 111, 81, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-base-100">
+    <!-- Header Section  -->
+    <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="flex-1 justify-between">
+            <div class="dropdown order-2 justify-between">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="-ml-7 menu menu-sm dropdown-content bg-base-100 z-[1] mt-3 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Product</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="font-bold text-green-600 text-xl uppercase"
+              ><span class="text-2xl lg:text-3xl text-sky-600">Print</span> Tex
+              Accessories</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Product</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <!-- <div>
+            <a class="btn btn-error bg-bike-primary text-white">Log in</a>
+          </div> -->
+        </div>
+      </nav>
+      <!-- Slider/Carousel  -->
+      <div class="carousel w-full bg-bike-primary-bg">
+        <!-- Slider-1  -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row lg:p-12">
+            <!-- Text content  -->
+            <div class="lg:w-[70%]">
+              <img
+                class="mt-7 lg:-ml-10"
+                src="./images/slider/logo-01.png"
+                alt=""
+              />
+              <!-- <button class="mb-5 btn bg-bike-primary text-white">View Details</button> -->
+            </div>
+            <!-- image content  -->
+            <div class="w-[50%] mx-auto lg:w-[20%] mb-10 lg:mt-5">
+              <img class="shadow-2xl" src="./images/others/sukur-2.png" />
+            </div>
+          </div>
+          <!-- <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div> -->
+        </div>
+        <!-- Slider-2  -->
+        <!-- <div id="slide2" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row p-12 lg:p-24"> -->
+        <!-- Text content  -->
+        <!-- <div class="space-y-7 flex-1">
+              <h2 class="text-6xl font-bold">
+                Suzuki Gixxer 150 <br />
+                with Smile
+              </h2>
+              <p>
+                Here is the latest version of your favorite street sport bike
+                with the same engine specifications and engine test as the
+                Gixxer.
+              </p>
+              <button class="btn bg-bike-primary text-white">Purchase</button>
+            </div> -->
+        <!-- image content  -->
+        <!-- <div>
+              <img src="./images/slider/bike2.png" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> -->
+        <!-- Slider-3  -->
+        <!-- <div id="slide3" class="carousel-item relative w-full">
+          <div class="flex flex-col lg:flex-row p-12 lg:p-24"> -->
+        <!-- Text content  -->
+        <!-- <div class="space-y-7 flex-1">
+              <h2 class="text-6xl font-bold">
+                The New Gixxer <br />
+                with Smile
+              </h2>
+              <p>
+                The New Gixxer is featured with the muscular street bike styling
+                right, the overall ethos.
+              </p>
+              <button class="btn bg-bike-primary text-white">Purchase</button>
+            </div> -->
+        <!-- image content  -->
+        <!-- <div>
+              <img src="./images/slider/bike3.png" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <!-- Main Section  -->
+    <main class="container mx-auto">
+      <!-- About Section  -->
+      <section class="my-24">
+        <div class="flex flex-col lg:flex-row">
+          <!-- Image  -->
+          <div class="lg:w-[50%]">
+            <img class="px-3 lg:ml-20" src="./images/others/about.png" alt="" />
+          </div>
+          <!-- Text  -->
+          <div class="px-3 my-5 lg:w-[50%]">
+            <h1 class="text-3xl font-bold mb-5 text-gray-600">About Us</h1>
+            <p>
+              <span class="font-bold uppercase">Print Tex Accessories</span> is
+              one of the leading RMG & LPG accessories manufacturer & supplier
+              since 2013 as one of the leading manufacturers & exporters of the
+              country managed by a team of highly skilled professionals engaged
+              in the business for more than a decade have been able to gain
+              profound reputation at home and abroad. We do not compromise with
+              the quality of the products and we also make sure that shipment is
+              one that’s how we have been capable to exert very positive
+              bi-lateral business relationship with the international
+              purchasers....
+            </p>
+            <button class="mt-5 btn bg-green-600 hover:bg-sky-600 text-white">
+              Read More
+            </button>
+          </div>
+        </div>
+        <!-- History Section  -->
+        <div
+          class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+        >
+          <!-- card-1  -->
+          <div class="border shadow-xl">
+            <img
+              class="w-16 my-5 mx-auto"
+              src="./images/icons/history.png"
+              alt=""
+            />
+            <h1 class="text-2xl my-5 font-bold text-center">Our History</h1>
+            <p class="pl-5">
+              <span class="font-bold uppercase">Print Tex Accessories</span> is
+              a proceeding accessories company of Readymade Garments Industry in
+              Bangladesh. We are the manufacturer exporter, importer and
+              supplier of all kinds of Garments Accessories. We started our
+              business on 2006. Now we are matured though 8 years work
+            </p>
+            <div class="flex my-5 justify-center">
+              <button
+                class="transition duration-150 hover:bg-gray-400 py-1 px-2 rounded-sm text-white bg-green-600"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- <button class="">Learn More</button>   -->
+          </div>
+          <!-- card-2  -->
+          <div class="border shadow-xl">
+            <img
+              class="w-16 my-5 mx-auto"
+              src="./images/icons/mission.png"
+              alt=""
+            />
+            <h1 class="text-2xl my-5 font-bold text-center">
+              Mission & Vision
+            </h1>
+            <p class="pl-5">
+              <span class="font-bold uppercase">Print Tex Accessories</span> is
+              aim to have a wide market network, catching in developed and
+              developing markets, adding strengthen value to run business with
+              new excellence, adapting the innovation in the industry, staying a
+              head in dealing with change.
+            </p>
+            <div class="flex justify-center">
+              <button
+                class="transition duration-150 hover:bg-gray-400 py-1 px-2 rounded-sm text-white bg-green-600 mt-8"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- <button class="">Learn More</button>   -->
+          </div>
+          <!-- card-3  -->
+          <div class="border shadow-xl">
+            <img
+              class="w-16 my-5 mx-auto"
+              src="./images/icons/history.png"
+              alt=""
+            />
+            <h1 class="text-2xl my-5 font-bold text-center">Management</h1>
+            <p class="pl-5">
+              <span class="font-bold uppercase">Print Tex Accessories</span> is
+              a being managed by a highly qualified, experienced and
+              professional team. This excellent team is being led by
+              <span class="font-bold">Md. Nurun Nobi Sumon</span> with 12 years
+              of experience in the Garments…..
+            </p>
+            <div class="flex mt-10 justify-center">
+              <button
+                class="transition duration-150 hover:bg-gray-400 py-1 px-2 rounded-sm text-white bg-green-600"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 inline"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- <button class="">Learn More</button>   -->
+          </div>
+        </div>
+      </section>
+      <!-- What We Do Section  -->
+      <section class="mb-24">
+        <div
+          class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16"
+        >
+          <!-- Text Section -->
+          <div class="flex justify-center items-center overflow-auto">
+            <div class="w-5/6">
+              <h1 class="text-4xl font-bold mt-10 mb-5">
+                Meet Our Super Clients
+              </h1>
+              <p class="mb-5">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable.
+              </p>
+              <button
+                class="bg-white rounded text-orange-700 px-3 py-2 font-bold"
+              >
+                Show All
+              </button>
+            </div>
+          </div>
+          <!-- Review Card Section -->
+          <div class="relative py-24">
+            <!-- Middle Card  -->
+            <div class="absolute z-10 top-44 md:top-56">
+              <div
+                class="h-56 w-full md:w-3/4 text-black rounded-lg bg-white flex items-center px-5"
+              >
+                <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                  <img class="p-1" src="./images/client.png" alt="" />
+                </div>
+                <div>
+                  <p class="text-gray-600 mb-5">
+                    We are providing the best and suitable home insurance
+                    services for the people who are interested to treatment
+                  </p>
+                  <h1 class="font-bold">Ilham Yuda</h1>
+                  <small>Business Man</small>
+                </div>
+              </div>
+            </div>
+            <!-- Top Card -->
+            <div
+              class="relative h-56 w-full left-8 md:left-32 md:w-3/4 text-black rounded-lg bg-white flex items-center px-5 opacity-40"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-1" src="./images/client.png" alt="" />
+              </div>
+              <div>
+                <p class="text-gray-600 mb-5">
+                  We are providing the best and suitable home insurance services
+                  for the people who are interested to treatment
+                </p>
+                <h1 class="font-bold">Ilham Yuda</h1>
+                <small>Business Man</small>
+              </div>
+            </div>
+            <!-- Bottom Card  -->
+            <div
+              class="relative top-10 h-56 w-full left-8 md:left-32 md:w-3/4 text-black rounded-lg bg-white flex items-center px-5 opacity-40"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-1" src="./images/client.png" alt="" />
+              </div>
+              <div>
+                <p class="text-gray-600 mb-5">
+                  We are providing the best and suitable home insurance services
+                  for the people who are interested to treatment
+                </p>
+                <h1 class="font-bold">Ilham Yuda</h1>
+                <small>Business Man</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Bikes Section  -->
+      <section class="my-24">
+        <!-- text content  -->
+        <div class="text-center">
+          <h1
+            class="lg:text-4xl text-orange-400 font-bold bg-gray-100 w-2/5 mx-auto"
+          >
+            Our Product
+          </h1>
+          <p class="my-4">WE MANUFACTURE A WIDE RANGE OF ACCESSORIES</p>
+        </div>
+        <!-- image content  -->
+        <div
+          class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+        >
+          <img
+            class="border p-5 rounded-lg shadow-xl border-gray-300 mx-auto"
+            src="./images/others/feature-bike.png"
+            alt=""
+          />
+          <img
+            class="border p-5 rounded-lg shadow-xl border-gray-300 mx-auto"
+            src="./images/others/feature-bike.png"
+            alt=""
+          />
+          <img
+            class="border p-5 rounded-lg shadow-xl border-gray-300 mx-auto"
+            src="./images/others/feature-bike.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- Latest bike Section  -->
+      <section class="my-24">
+        <h3 class="text-center text-5xl font-bold mb-12">Latest Products</h3>
+        <!-- Cards  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- Card-1  -->
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img src="./images/others/latest1.png" alt="" />
+            </figure>
+            <div class="card-body space-y-5">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button class="btn bg-bike-primary text-white">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card-2  -->
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img src="./images/others/latest2.png" alt="" />
+            </figure>
+            <div class="card-body space-y-5">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button class="btn bg-bike-primary text-white">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card-3  -->
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img src="./images/others/latest3.png" alt="" />
+            </figure>
+            <div class="card-body space-y-5">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button class="btn bg-bike-primary text-white">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Happy Clint Section  -->
+      <section class="my-24">
+        <!-- text section  -->
+        <div class="mb-12 text-center">
+          <h1 class="uppercase font-bold text-6xl">
+            Happy <span class="text-bike-primary">Clients says</span>
+          </h1>
+        </div>
+        <!-- Avatar Card Section  -->
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Card 1  -->
+            <div class="mx-auto border w-80 h-[450px] relative">
+              <!-- Avatar  -->
+              <div class="ml-28 mt-10 absolute">
+                <div class="avatar">
+                  <div class="w-24 rounded-full">
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- text  -->
+              <div class="mt-40 absolute">
+                <p class="mx-auto w-4/5">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month.
+                </p>
+              </div>
+              <!-- Rating  -->
+              <div class="ml-24 mt-64 absolute">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked="checked"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+              </div>
+              <!-- Title  -->
+              <div class="ml-20 my-80">
+                <h1 class="font-bold text-2xl text-sky-600">Regina Miles</h1>
+                <h1 class="ml-10 my-4 font-bold text-xl">Banker</h1>
+              </div>
+            </div>
+            <!-- Card 2  -->
+            <div class="mx-auto border w-80 h-[450px] relative">
+              <!-- Avatar  -->
+              <div class="ml-28 mt-10 absolute">
+                <div class="avatar">
+                  <div class="w-24 rounded-full">
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- text  -->
+              <div class="mt-40 absolute">
+                <p class="mx-auto w-4/5">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month.
+                </p>
+              </div>
+              <!-- Rating  -->
+              <div class="ml-24 mt-64 absolute">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked="checked"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+              </div>
+              <!-- Title  -->
+              <div class="ml-20 my-80">
+                <h1 class="font-bold text-2xl text-sky-600">Regina Miles</h1>
+                <h1 class="ml-10 my-4 font-bold text-xl">Banker</h1>
+              </div>
+            </div>
+            <!-- Card 3  -->
+            <div class="mx-auto border w-80 h-[450px] relative">
+              <!-- Avatar  -->
+              <div class="ml-28 mt-10 absolute">
+                <div class="avatar">
+                  <div class="w-24 rounded-full">
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- text  -->
+              <div class="mt-40 absolute">
+                <p class="mx-auto w-4/5">
+                  Slate helps you see how many more days you need to work to
+                  reach your financial goal for the month.
+                </p>
+              </div>
+              <!-- Rating  -->
+              <div class="ml-24 mt-64 absolute">
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked="checked"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+              </div>
+              <!-- Title  -->
+              <div class="ml-20 my-80">
+                <h1 class="font-bold text-2xl text-sky-600">Regina Miles</h1>
+                <h1 class="ml-10 my-4 font-bold text-xl">Banker</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section  -->
+      <section class="my-24">
+        <!-- Content Title -->
+        <div class="text-center mb-12">
+          <h1 class="uppercase font-bold text-6xl">
+            Frequently Asked<span class="text-bike-primary"> Questions</span>
+          </h1>
+        </div>
+        <!-- Hero Content  -->
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="./images/others/faq.png"
+              class="md:max-w-md rounded-lg shadow-2xl"
+            />
+            <!-- Accordion UI  -->
+            <div class="space-y-3">
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  What are the most important things I should know about riding
+                  a bike?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  How can I tell if my helmet is old and I need a new one?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  My bike has been in storage is it safe to ride?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    How can I tell if my helmet is old and I need a new one?
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  My bike has been in storage is it safe to ride?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    How can I tell if my helmet is old and I need a new one?
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  My bike has been in storage is it safe to ride?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    How can I tell if my helmet is old and I need a new one?
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  My bike has been in storage is it safe to ride?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    How can I tell if my helmet is old and I need a new one?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section  -->
+    <footer
+      class="footer bg-black text-neutral-content p-10 justify-between mx-auto"
+    >
+      <aside>
+        <p>
+          ACME Industries Ltd.
+          <br />
+          Providing reliable tech since 1992
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Get The App</h6>
+        <div class="grid grid-cols-1 gap-4">
+          <a>
+            <img class="w-36" src="./images/others/android.png" alt="" />
+          </a>
+          <a>
+            <img class="w-36" src="./images/others/ios.png" alt="" />
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
